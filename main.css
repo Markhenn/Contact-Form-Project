@@ -1,7 +1,43 @@
-html {
-	  box-sizing: border-box;
+body {
+	font: normal 16px Helvetica, Arial, sans-serif;
 }
 
-*, *::before, *::after {
-	  box-sizing: inherit;
+fieldset {
+	border: none;
+	width: 600px;
+	margin: 0 auto;
+}
+
+dt {
+	margin-bottom: 5px;
+}
+
+dd {
+	margin: 0 0 25px;
+}
+
+[type="text"],
+[type="email"],
+textarea {
+	box-sizing: border-box;
+	border: 1px solid #cecece;
+	font-size: 14px;
+	padding: 3px 10px;
+	width: 100%;
+}
+
+[type="text"],
+[type="email"] {
+	height: 30px;
+}
+
+textarea {
+	resize: vertical;
+	height: auto;
+}
+
+ul {
+	font-size: 14px;
+	list-style:none;
+	padding-left: 0;
 }
