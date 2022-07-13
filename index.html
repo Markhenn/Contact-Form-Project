@@ -23,14 +23,16 @@
           <dd>
           <input type="email" id="email" name="email" placeholder="##@##.##"/>
           </dd>
+        </dl>
 
-          <dt><label for="city">City</label></dt>
-          <dd>
-          <input type="text" id="city" name="city" />
-          </dd>
+        <ul class="address">
+          <li>
+            <label for="city">City </label>
+            <input type="text" id="city" name="city" />
+          </li>
 
-          <dt><label for="state">State</label></dt>
-          <dd>
+          <li>
+            <label for="state">State</label>
             <select name="state" id="state">
               <option>AK</option>
               <option>AL</option>
@@ -84,13 +86,14 @@
               <option>WV</option>
               <option>WY</option>
             </select>
-          </dd>
+          </li>
 
-          <dt><label for="zip">Zip Code</label></dt>
-          <dd>
+          <li>
+            <label for="zip">Zip Code</label>
             <input type="text" id="zip" name="zip" placeholder="#####" pattern="\d{5}"/>
-          </dd>
-        </dl>
+          </li>
+        </ul>
+
         <p>Which of these colors do you like best?</p>
         <ul>
           <li>
@@ -156,8 +159,14 @@
             </label>
           </li>
         </ul>
-        <label for="comment">Comments</label>
-        <textarea name="comment" id="comment" rows="6" cols="80"></textarea>
+        <dl>
+          <dt>
+              <label for="comment">Comments</label>
+            </dt>
+          <dd>
+            <textarea name="comment" id="comment" rows="6" cols="80"></textarea>
+          </dd>
+        </dl>
         <input type="hidden" name="timestamp" value="2018-02-17" />
         <input type="submit" value="Send" />
         <input type="reset" />
